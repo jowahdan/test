@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+    <!-- navvar -->
+    <div id="very">  <!-- div of all page except result  -->
+    <div class="time"> <!--div of time-->
+          <button onclick="result()">delivery</button>
+            <span id="span"></span> <!-- "time"-->
+    </div>
+    <!-- progress bar -->
+    <div class="container">
+        <div class="con" id="con">
+            <span id="precent">0 </span>
+            <span>%</span>
+        </div>
+        </div>
+      <!-- first question -->
+    <div class="quest" id="quest">
+        <div class="mash">
+            <h2 class="h2">what is the job of input number</h2>
+            <i class="fa-regular fa-circle-exclamation fa-xl" id="newb" style="cursor: pointer;" onclick="back()"></i>
+        </div>
+        <!-- choises -->
+        <div>
+            <!-- choise1 -->
+            <div class="ans">
+                <div class="appo" id="a" onclick="an()">a</div>
+                <h2>to write string </h2>
+            </div>
+            <!-- choise2 -->
+            <div class="ans">
+                <div class="appo" id="b" onclick="bn()">b</div>
+                <h2>to write number</h2>
+            </div>
+            <!-- choise3 -->
+            <div class="ans">
+                <div class="appo" id="c" onclick="cn()">c</div>
+                <h2>to write password</h2>
+            </div>
+            <!-- choise4 -->
+            <div class="ans">
+                <div class="appo" id="d" onclick="dn()">d</div>
+                <h2>to write date</h2>
+            </div>
+        </div>
+    </div>
+            <!-- second question -->
+    <div class="ques" id="ques">
+        <div class="mash">
+            <h2 class="h2">what is the job of input text</h2>
+            <i class="fa-regular fa-circle-exclamation fa-xl" id="newa" style="cursor: pointer;"></i>
+        </div>
+        <div>
+            <!-- choise1 -->
+            <div class="ans">
+                <div class="app " id="aa" onclick="aa()">a</div>
+                <h2>to write string </h2>
+            </div>
+            <!-- choise2 -->
+            <div class="ans">
+                <div class="app" id="bb" onclick="bb()">b</div>
+                <h2>to write number</h2>
+            </div>
+            <div class="ans">
+                <div class="app" id="cc" onclick="cc()">c</div>
+                <h2>to write password</h2>
+            </div>
+            <div class="ans">
+                <div class="app" id="dd" onclick="dd()">d</div>
+                <h2>to write date</h2>
+            </div>
+        </div>
+    </div>
+ <!-- third question -->
+    <div class="que" id="que">
+        <div class="mash">
+            <h2 class="h2">what is the job of input password</h2>
+            <i class="fa-regular fa-circle-exclamation fa-xl" id="newad" style="cursor: pointer;"></i>
+            
+        </div>
+        <div>
+            <!-- choise1 -->
+            <div class="ans">
+                <div class="ap" id="aaa" onclick="aaa()">a</div>
+                <h2>to write string </h2>
+            </div>
+            <!-- choise2 -->
+            <div class="ans">
+                <div class="ap" id="bbb" onclick="bbb()">b</div>
+                <h2>to write number</h2>
+            </div>
+            <div class="ans">
+                <div class="ap" id="ccc" onclick="ccc()">c</div>
+                <h2>to write password</h2>
+            </div>
+            <div class="ans">
+                <div class="ap" id="ddd" onclick="ddd()">d</div>
+                <h2>to write date</h2>
+            </div>
+        </div>
+    </div>
+ <!-- fourst question -->
+    <div class="qu" id="qu">
+        <div class="mash">
+            <h2 class="h2">what is the job of input email</h2>
+            <i class="fa-regular fa-circle-exclamation fa-xl" id="newadd" style="cursor: pointer;"></i>
+            
+        </div>
+        <div>
+            <!-- choise1 -->
+            <div class="ans">
+                <div class="appoi" id="aaaa" onclick="aaaa()">a</div>
+                <h2>to write string </h2>
+            </div>
+            <!-- choise2 -->
+            <div class="ans">
+                <div class="appoi" id="bbbb" onclick="bbbb()">b</div>
+                <h2>to write number</h2>
+            </div>
+            <div class="ans">
+                <div class="appoi" id="cccc" onclick="cccc()">c</div>
+                <h2>to write password</h2>
+            </div>
+            <div class="ans">
+                <div class="appoi" id="dddd" onclick="dddd()">d</div>
+                <h2>to write email</h2>
+            </div>
+        </div>
+    </div>
+ <!-- five question -->
+    <div class="q" id="q">
+        <div class="mash">
+            <h2 class="h2">what is the job of input date</h2>
+            <i class="fa-regular fa-circle-exclamation fa-xl" id="newaddm" style="cursor: pointer;"></i>
+            
+        </div>
+        <div>
+            <!-- choise1 -->
+            <div class="ans">
+                <div class="appoin" id="aaaaa" onclick="aaaaa()">a</div>
+                <h2>to write string </h2>
+            </div>
+            <!-- choise2 -->
+            <div class="ans">
+                <div class="appoin" id="bbbbb" onclick="bbbbb()">b</div>
+                <h2>to write number</h2>
+            </div>
+            <div class="ans">
+                <div class="appoin" id="ccccc" onclick="ccccc()">c</div>
+                <h2>to write password</h2>
+            </div>
+            <div class="ans">
+                <div class="appoin" id="ddddd" onclick="ddddd()">d</div>
+                <h2>to write date</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- previous -->
+    <div class="arrange">
+        <div class="move" id="previous" onclick="previous()">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left"></i>
+            <h3 >the previous question</h3>
+        </div>
+        <!-- next -->
+        <div class="move" id="next" onclick="next()">
+            <h3 >the next question</h3>
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+
+    <!-- nums of questions -->
+    <div class="nums">
+        <div class="num" id="one" onclick="one()" onmouseenter="chan()" onmouseout="chang()">1</div>
+        <div class="num" id="two" onclick="two()" onmouseenter="ins()" onmouseout="inst()">2</div>
+        <div class="num" id="three" onclick="three()" onmouseenter="inste()" onmouseout="instea()">3</div>
+        <div class="num" id="four" onclick="four()" onmouseenter="conca()" onmouseout="concat()">4</div>
+        <div class="num" id="five" onclick="five()" onmouseenter="concate()" onmouseout="concaten()">5</div>
+    </div>
+</div>
+
+<!-- result -->
+    <div id="result">
+        <img src="suc-removebg-preview (1).png" alt="">
+        <h1 id="grad">جيد جدا</h1>
+        <h2 id="grade">3/5</h2>
+    </div>
+</body>
+</html>
